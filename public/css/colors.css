@@ -1,0 +1,113 @@
+:root {
+  /* Cores principais */
+  --primary: #2b2d42; /* Azul escuro/índigo - cor principal da marca */
+  --secondary: #4e5de3; /* Azul vibrante - cor de destaque */
+
+  /* Cores de fundo */
+  --bg-primary: #f8f9fa; /* Branco off-white - fundo principal */
+  --bg-secondary: #edf2f4; /* Cinza muito claro - fundo secundário */
+  --bg-card: #ffffff; /* Branco puro - fundo dos cards */
+  --bg-car: #1a1a1d;
+
+  /* Cores de texto */
+  --text-primary: #2b2d42; /* Azul escuro - texto principal */
+  --text-secondary: #5c6c7c; /* Cinza azulado - texto secundário */
+  --text-light: #ffffff; /* Branco - texto sobre fundos escuros */
+
+  /* Cores de ação */
+  --accent: #4e5de3; /* Azul vibrante - botões e links */
+  --accent-hover: #3f4dcc; /* Azul mais escuro - hover */
+  --success: #4caf50; /* Verde - mensagens de sucesso */
+  --warning: #ffc107; /* Amarelo - avisos */
+  --error: #dc3545; /* Vermelho - erros */
+
+  /* Cores de elementos específicos */
+  --header-bg: #2b2d42; /* Fundo do header */
+  --footer-bg: #d2d2d2; /* Fundo do footer */
+  --card-shadow: rgba(43, 45, 66, 0.1); /* Sombra dos cards */
+  --rating-star: #ffc107; /* Estrelas de avaliação */
+  --cart-badge: #dc3545; /* Indicador do carrinho */
+  --search-border: #dde2e5; /* Borda da busca */
+}
+
+/* Exemplo de aplicação básica */
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+header {
+  background-color: var(--header-bg);
+  color: var(--text-light);
+}
+
+.favs .container-favs {
+  fill: var(--rating-star);
+}
+
+.card {
+  background-color: var(--bg-card);
+  box-shadow: 0 2px 8px var(--card-shadow);
+}
+
+.image {
+  background-color: #fafafa;
+}
+
+.rating .label {
+  color: var(--rating-star);
+}
+
+footer {
+  background-color: var(--footer-bg);
+  color: var(--text-secondary);
+}
+
+.search input {
+  border: 1px solid var(--search-border);
+  background-color: var(--bg-card);
+}
+
+i {
+  color: var(--text-light);
+}
+
+header .quantity {
+  background: var(--cart-badge);
+  color: var(--text-light);
+}
+
+.produto-view {
+  background-color: var(--footer-bg);
+}
+
+.shopcar-content {
+  background-color: var(--bg-car);
+  color: var(--text-light);
+}
+
+.shopcar-content span i {
+  color: var(--text-light);
+}
+
+#fim-compra {
+  background: #d2d2d2;
+  background-image: linear-gradient(to bottom, #d2d2d2, #c2c2c2);
+  color: #2b2d42;
+}
+
+.pedido-img {
+  background-color: #fafafa;
+}
+
+.pedido .pedido-content #quantity {
+  background: var(--bg-secondary);
+}
+
+.quantity-container button {
+  background-color: #f0f0f0;
+}
+
+.quantity-container button:focus {
+  background-color: #e0e0e0;
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./public/css/main.css" />
+    <link rel="stylesheet" href="./public/css/colors.css" />
+
+    <!-- Ícones -->
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/2.6.0/uicons-solid-straight/css/uicons-solid-straight.css"
+    />
+    <title>Nexus Store</title>
+  </head>
+  <body>
+    <header>
+      <h1>NEXUS STORE</h1>
+      <div class="nav-content">
+        <div class="icons">
+          <div class="shop-cart" id="shop-car"><i class="fi fi-rr-shopping-cart"></i></div>
+          <span class="quantity">0</span>
+        </div>
+
+        <div class="search">
+          <input type="text" id="search-bar" value="" />
+          <button class="search-button"><i class="fi fi-rr-search"></i></button>
+        </div>
+      </div>
+    </header>
+
+    <section class="shopcar-content desactive">
+      <div class="title">
+        <span id="fechar"><i class="fi fi-rr-cross-circle"></i></span>
+        <h1>Carrinho</h1>
+      </div>
+      <div id="products-sales"></div>
+      <div class="sale-infos">
+        <label class="page-infos"
+          >Detalhes do Pagamento
+          <ul>
+            <li>
+              Total dos Produtos:
+              <span
+                >$
+                <p class="total-produtos">0,00</p>
+              </span>
+            </li>
+            <li>
+              Total do Frete:
+              <span
+                >$
+                <p class="total-frete">0,00</p>
+              </span>
+            </li>
+            <li>
+              Pagamento Total:
+              <span
+                >$
+                <p class="total-pagamento">0,00</p>
+              </span>
+            </li>
+          </ul>
+        </label>
+        <label class="page-confirm">
+          <h5>
+            Total:
+            <span
+              >$
+              <p>0,00</p></span
+            >
+          </h5>
+          <button id="fim-compra">Finalizar Compra</button>
+        </label>
+      </div>
+    </section>
+
+    <main class="produtos-content"></main>
+    <section class="produto-view desactive">aaa</section>
+
+    <footer>
+      <h3>Entre em contato conosco:</h3>
+      <address>
+        <p>
+          <strong>Endereço: </strong>
+          Avenida Onze de Outubro, n° 123<br />
+          Centro, Cidade / MG CEP: 12345-678
+        </p>
+        <div>
+          <p><strong>Telefone: </strong>(55)55555-5555</p>
+          <p>
+            <strong>E-mail: </strong><a href="mailto:contato@nexus.store">contato@nexus.store</a>
+          </p>
+        </div>
+        <div>
+          <p>
+            <strong>Horário de funcionamento: </strong>
+          </p>
+          <p>Segunda a Sexta: 08h00 às 17h00 - Sábado: 08h00 às 12h00</p>
+        </div>
+      </address>
+      <p>© 2024 Nexus Store</p>
+    </footer>
+
+    <script src="./public/js/script.js"></script>
+  </body>
+</html>
